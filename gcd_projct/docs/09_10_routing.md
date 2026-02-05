@@ -5,7 +5,7 @@
 ## 如何运行
 
 ```bash
-cd /home/yuxiangw/github/learning_openroad/gcd_project
+cd /home/yuxiangw/github/learning_chip_design/gcd_projct
 
 # 步骤9: 全局布线
 openroad scripts/09_global_route.tcl

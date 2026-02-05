@@ -3,7 +3,7 @@
 ## 如何运行
 
 ```bash
-cd /home/yuxiangw/github/learning_openroad/gcd_project
+cd /home/yuxiangw/github/learning_chip_design/gcd_projct
 openroad scripts/04_pdn.tcl
 ```
 

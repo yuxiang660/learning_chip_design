@@ -5,7 +5,7 @@
 ## 如何运行
 
 ```bash
-cd /home/yuxiangw/github/learning_openroad/gcd_project
+cd /home/yuxiangw/github/learning_chip_design/gcd_projct
 
 # 步骤5: 全局布局
 openroad scripts/05_global_place_skip_io.tcl

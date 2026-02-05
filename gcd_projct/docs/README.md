@@ -167,7 +167,7 @@
 
 ### 完整流程命令
 ```bash
-cd /home/yuxiangw/github/learning_openroad/gcd_project
+cd /home/yuxiangw/github/learning_chip_design/gcd_projct
 
 # 一键运行完整流程
 ./run_all.sh

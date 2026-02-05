@@ -5,7 +5,7 @@
 ## 如何运行
 
 ```bash
-cd /home/yuxiangw/github/learning_openroad/gcd_project
+cd /home/yuxiangw/github/learning_chip_design/gcd_projct
 
 # 步骤11: Filler Cell插入
 openroad scripts/11_filler.tcl

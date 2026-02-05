@@ -4,7 +4,7 @@
 
 set -e  # Exit on any error
 
-PROJ_DIR="/home/yuxiangw/github/learning_openroad/gcd_project"
+PROJ_DIR="/home/yuxiangw/github/learning_chip_design/gcd_projct"
 
 echo "========================================="
 echo "Running Complete GCD ASIC Flow"
