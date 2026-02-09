@@ -10,7 +10,7 @@ set DESIGN_NAME "gcd"
 set PLATFORM_DIR "/home/yuxiangw/github/OpenROAD-flow-scripts/flow/platforms/asap7"
 
 # 项目目录
-set PROJ_DIR "/home/yuxiangw/github/learning_chip_design/gcd_projct"
+set PROJ_DIR "/mnt/c/Users/yuxiangw/GitHub/learning_chip_design/gcd_projct"
 set RESULT_DIR "./results"
 set REPORT_DIR "./reports"
 set RTL_DIR "./rtl"

@@ -3,7 +3,6 @@
 ## 如何运行
 
 ```bash
-cd /home/yuxiangw/github/learning_chip_design/gcd_projct
 yosys scripts/01_synth.tcl
 ```
 

@@ -31,11 +31,17 @@
 |---|------|------|------|
 | 9-10 | [09_10_routing.md](09_10_routing.md) | 布线 | 全局布线，详细布线，DRC，Via，Antenna |
 
+### 寄生参数提取
+
+| # | 文档 | 步骤 | 说明 |
+|---|------|------|------|
+| 11 | [11_spef.md](11_spef.md) | SPEF生成 | RC寄生参数，精确时序分析 |
+
 ### 收尾阶段
 
 | # | 文档 | 步骤 | 说明 |
 |---|------|------|------|
-| 11-12 | [11_12_finishing.md](11_12_finishing.md) | 收尾 | Filler插入，DEF/ODB输出，GDSII，Sign-off |
+| 12-14 | [13_14_finishing.md](13_14_finishing.md) | 收尾 | Filler插入，DEF/ODB输出，GDSII，Sign-off |
 
 ## 🎯 快速导航
 
@@ -61,6 +67,11 @@
 - DRC violations → [09_10_routing.md](09_10_routing.md#6-drc-violations设计规则违例)
 - Antenna effect → [09_10_routing.md](09_10_routing.md#7-antenna-effect天线效应)
 
+**寄生提取**:
+- SPEF 格式 → [11_spef.md](11_spef.md#1-spef-standard-parasitic-exchange-format)
+- RC 提取 → [11_spef.md](11_spef.md#2-rc寄生参数提取)
+- 电容/电阻 → [11_spef.md](11_spef.md#3-电阻提取-resistance-extraction)
+
 **可靠性**:
 - Latchup → [03_tapcell.md](03_tapcell.md#2-闩锁效应-latchup)
 - Well tap → [03_tapcell.md](03_tapcell.md#1-well-tap-cell阱接触单元)
@@ -70,8 +81,9 @@
 - DEF → [02_floorplan.md](02_floorplan.md#7-def文件design-exchange-format)
 - ODB → [02_floorplan.md](02_floorplan.md#8-odbopenroad-database)
 - Liberty → [01_synthesis.md](01_synthesis.md#4-liberty文件-lib)
-- SDF → [11_12_finishing.md](11_12_finishing.md#8-sdf-standard-delay-format)
-- GDSII → [11_12_finishing.md](11_12_finishing.md#9-gdsii格式)
+- SPEF → [11_spef.md](11_spef.md#1-spef-standard-parasitic-exchange-format)
+- SDF → [13_14_finishing.md](13_14_finishing.md#8-sdf-standard-delay-format)
+- GDSII → [13_14_finishing.md](13_14_finishing.md#9-gdsii格式)
 
 ## 📖 如何使用本文档
 
@@ -79,7 +91,7 @@
 
 **初学者** (按顺序阅读):
 ```
-01 → 02 → 03 → 04 → 05-07 → 08 → 09-10 → 11-12
+01 → 02 → 03 → 04 → 05-07 → 08 → 09-10 → 11 → 12-14
 ```
 每个步骤都有完整的概念解释和示例。
 
@@ -167,7 +179,7 @@
 
 ### 完整流程命令
 ```bash
-cd /home/yuxiangw/github/learning_chip_design/gcd_projct
+
 
 # 一键运行完整流程
 ./run_all.sh

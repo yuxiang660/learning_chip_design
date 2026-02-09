@@ -1,22 +1,23 @@
-# 步骤11-12: 收尾阶段 (Finishing)
+# 步顲12-14: 收尾阶段 (Finishing)
 
 本文档涵盖Filler插入和最终输出生成两个步骤
 
 ## 如何运行
 
 ```bash
-cd /home/yuxiangw/github/learning_chip_design/gcd_projct
+# 步顲12: Filler Cell插入
+openroad scripts/12_filler.tcl
 
-# 步骤11: Filler Cell插入
-openroad scripts/11_filler.tcl
+# 步顲13: 最终输出
+openroad scripts/13_gdsii.tcl
 
-# 步骤12: 最终输出
-openroad scripts/12_gdsii.tcl
+# 步顲14: 最终SPEF生成 (可选)
+openroad scripts/14_spef_final.tcl
 ```
 
 ## 输入与输出
 
-### 步骤11: Filler插入
+### 步骤12: Filler插入
 **输入**: `results/detail_route.odb`  
 **输出**: `results/filler.odb`
 
@@ -27,14 +28,24 @@ Filler instances: 5039
 总instances: 5555
 ```
 
-### 步骤12: 最终输出
+### 步骤13: 最终输出
 **输入**: `results/filler.odb`  
 **输出**: 
 - `results/gcd_final.def` (DEF格式)
-- `results/gcd_final.odb` (ODB格式)
+- `results/gcd_final.odb` (OpenROAD数据库)
 - `results/gcd_final.v` (后端netlist)
 - `reports/final_timing_*.rpt` (时序报告)
 - `reports/final_area.rpt` (面积报告)
+
+### 步骤14: 最终SPEF生成 (可选)
+**输入**: `results/filler.odb`  
+**输出**: 
+- `reports/gcd_final.spef` (最终RC寄生参数)
+
+### 步顲14: 最终SPEF生成 (可选)
+**输入**: `results/filler.odb`  
+**输出**: 
+- `reports/gcd_final.spef` (最终RC寄生参数)
 
 ## 涉及的EDA概念
 
